@@ -1,6 +1,6 @@
 A simple webhook built with Cloudflare Workers for taking new member notifications from Ghost and posting them into a Discord server.
 
-For more instructions on how to use this in practice, check out the associated blog post on bytesized.xyz.
+[For more instructions on how to use this in practice, check out the associated blog post on bytesized.xyz.](https://www.bytesized.xyz/how-to-build-a-discord-notification-bot-for-new-ghost-members/)
 
 You'll need a Cloudflare Workers account (free plan is OK) and our command-line tool [Wrangler](https://github.com/cloudflare/wrangler) installed and configured on your machine.
 
@@ -25,7 +25,7 @@ After publishing your project, you'll need to set a number of _secrets_ using `w
 
 ### Webhook URL
 
-The `DISCORD_URL` value you pass in as a secret should be an authenticated Discord URL as created in the "Integrations -> Webhooks" UI found in your Discord channel settings. For a guide on creating this, see the associated blog post.
+The `DISCORD_URL` value you pass in as a secret should be an authenticated Discord URL as created in the "Integrations -> Webhooks" UI found in your Discord channel settings. [For a guide on creating this, see the associated blog post for this codebase.](https://www.bytesized.xyz/how-to-build-a-discord-notification-bot-for-new-ghost-members/)
 
 ### Password
 
