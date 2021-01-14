@@ -4,6 +4,11 @@ addEventListener('fetch', event => {
 
 const config = {
   password: PASSWORD,
+  // The function arguments for this are part of a JSON body provided by Ghost
+  // This body isn't well-documented in Ghost's docs, so I've pulled out all of the
+  // generally useful information into the below example
+  //
+  // The response of this function should be a JSON stringified object
   createBody: ({ id, uuid, email, name, note, geolocation, subscribed, created_at, updated_at, avatar_image, labels }) => JSON.stringify({
     avatar_url: avatar_image,
     content: `${name} (${email}) just subscribed to Bytesized!`
