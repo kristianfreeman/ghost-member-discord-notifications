@@ -11,7 +11,7 @@ const config = {
   // The response of this function should be a JSON stringified object
   createBody: ({ id, uuid, email, name, note, geolocation, subscribed, created_at, updated_at, avatar_image, labels }) => JSON.stringify({
     avatar_url: avatar_image,
-    content: `${name} (${email}) just subscribed to Bytesized!`
+    content: `${email} just subscribed to Bytesized!`
   })
 }
 
